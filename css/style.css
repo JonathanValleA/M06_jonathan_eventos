@@ -1,0 +1,113 @@
+/* Estilos globales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    background-color: rgb(136, 209, 255);
+}
+h2 {
+    font-size: 50px;
+    padding: 20px;
+    border: 1px solid #000;
+    width: 50%;
+    margin: 50px auto;
+    text-align: center;
+    background-color: rgb(14, 14, 116);
+    box-shadow: 0px 0px 10px rgb(22, 22, 171);
+    border-radius: 10px;
+    color: #fff;
+    cursor: pointer;
+}
+h2:hover {
+    background-color: rgb(48, 48, 199);
+    transition: ease all 500ms;
+}
+/* Animación con scroll */
+.animated-element {
+    opacity: 0;
+    transform: translateY(50px);
+    padding: 50px;
+    text-align: center;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    margin-bottom: 30px;
+}
+
+.show {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+  /* Efecto de paralaje con el ratón */
+.parallax-container {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+    background-color: #f5f5f5;
+}
+
+.parallax-element {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 200px;
+    height: 200px;
+    background-image: url('https://picsum.photos/200');
+    background-size: cover;
+    transform: translate(-50%, -50%) rotate(-30deg);
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+  /* Efecto de paralaje con el scroll */
+.parallax-scroll {
+    background-image: url('https://picsum.photos/1200/800');
+    height: 800px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    padding: 100px;
+}
+.parallax-scroll h1,
+.parallax-scroll p {
+  color: #fff;
+  font-size: 3rem;
+}
+
+/* Animación con hover */
+.hover-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    text-align: center;
+    background-color: #f5f5f5;
+}
+.animation-hover {
+    display: grid;
+    justify-content: center;
+}
+  
+.hover-element {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    transition: transform 0.3s ease-in-out;
+    display: inline-block;
+    margin: 20px auto;
+}
+
+.hover-element:hover {
+    transform: rotate(360deg);
+}
+
